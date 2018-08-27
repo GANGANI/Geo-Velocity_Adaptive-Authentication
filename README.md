@@ -42,8 +42,7 @@
 					- Assertion Consumer URLs - http://localhost.com:8080/saml2-web-app-dispatch.com/consumer 
 					- Keep the other default settings as it is and save the configuration.
 5. Add two authentication steps .
-6. Update  one of the script as follows .
--7.1. Script to authenticate user by geo-velocity
+6. Copy the content of the Adaptive_Authentication_Script.js file to the script based adaptive authentication or update script as follows .
 ```sh
 // Specify the Siddhi application name.
 var siddhiApplication = 'GeoVelocity-Login';
