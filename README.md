@@ -5,6 +5,7 @@
 -   [WSO2 Identity Server](https://wso2.com/identity-and-access-management)
 -   [Apache Tomcat server](https://tomcat.apache.org/download-80.cgi)
 -  [WSO2 StreamProcessor](https://wso2.com/analytics-and-stream-processing/)
+-   Get a clone or download source from [GeoVelocity-Functions](https://maven.apache.org/download.cgi)  repository and build it by running the Maven command "mvn clean install" from within the distribution directory. Then copy the jar file in the target directory to the <IS_HOME>/repository/components/dropins folder
 
   ## Building the source
 
