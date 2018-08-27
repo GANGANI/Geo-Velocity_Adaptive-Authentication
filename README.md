@@ -37,28 +37,29 @@
 #### Method 01
 To get the geo-velocity among two login locations, You can execute the following two CURL commands seperatly in two terminals.
 ```sh
-curl -X POST  [https://localhost:8280/GeoVelocity-Login/InputStream](https://localhost:8280/GeoVelocity-Login/InputStream)  -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{
-"events":{
-"event": {
-"loginTime": "1535081659",
-"latitude": "40.7834",
-"username": "gaga",
-"longitude": "73.9662"
-}
-}
-}' -kv -u admin:admin
-
-curl -X POST  [https://localhost:8280/GeoVelocity-Login/InputStream](https://localhost:8280/GeoVelocity-Login/InputStream)  -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{
-"events":{
+curl -X POST https://localhost:8280/GeoVelocity-Login/InputStream -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{
 "event": {
 "loginTime": "1535042561",
 "latitude": "36.778259",
 "username": "gaga",
 "longitude": "-119.417931"
-}
-}
+}                         
+}' -kv -u admin:admin
+
+curl -X POST https://localhost:8280/GeoVelocity-Login/InputStream -H 'Accept: application/json' -H 'Content-Type: application/json' -d '{
+"event": {
+"loginTime": "1535081659",
+"latitude": "40.7834",
+"username": "gaga",
+"longitude": "73.9662"
+}                     
 }' -kv -u admin:admin
 ```
+You will receive a response similar to the response given below.
+```sh
+{"event":{"messageId":"54f201ca-544a-4398-8406-46affc09211d","username":"gaga","velocity":288.59158359821726}}
+```
+
 #### Method 02
   1. Start the wso2 identity server.
   2. Create a new service provider in Identity Server with the name “saml2-web-app-dispatch.com”. 
