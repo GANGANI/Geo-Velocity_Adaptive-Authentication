@@ -23,6 +23,7 @@
 1. Start the WSO2 Identity Server and log in to the management console using admin/admin credentials. 
 2. Click Resident under Identity Providers and expand Adaptive Authentication>Analytics Engine
 3. Configure the following properties accordingly.
+![screenshot from 2018-08-28 09-59-18](https://user-images.githubusercontent.com/25496816/44700848-1303a100-aaa9-11e8-8a79-423756f7a540.png)
 4. An HTTP connection is used to communicate between WSO2 IS and WSO2 SP. Therefore, you must add the certificate of WSO2 SP to WSO2 IS. Follow the steps given below to import the certificate from WSO2 SP to WSO2 IS. This example uses the default keystores and certificates. 
 
     a. Navigate to the <SP_HOME>/resources/security     directory on a new terminal window and run the     following command. 
